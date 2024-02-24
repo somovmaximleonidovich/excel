@@ -1,0 +1,26 @@
+.dashboard__tables {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &-item {
+            padding: 4px 8px;
+            height: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+                background: darkcyan;
+                border-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixins";
+
+.dashboard__header {
+    height: $dashboard-header-height;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+        max-width: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-search {
+        background-color: $background-color-grey;
+        padding: 4px;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+
+        &:hover {
+            border: 1px solid darkcyan;
+        }
+    }
+}

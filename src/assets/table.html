@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Dashboard</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="root">
+            <div class="table">
+                <div class="table__header">
+                    <div class="table__header-logo">
+                        <img src="./logo.png" alt="Logo" class="table__header-logo-image" />
+                        <h1 class="table__header-logo-title">Новая таблица</h1>
+                    </div>
+
+                    <div class="table__header-buttons">
+                        <i class="material-icons">delete</i>
+                        <i class="material-icons">exit_to_app</i>
+                    </div>
+                </div>
+
+                <div class="table__menu">
+                    <i class="material-icons">format_bold</i>
+                    <i class="material-icons">format_italic</i>
+                    <i class="material-icons">format_underlined</i>
+                    <i class="material-icons">format_align_left</i>
+                    <i class="material-icons">format_align_center</i>
+                    <i class="material-icons">format_align_right</i>
+                </div>
+
+                <div class="table__formula">
+                    <i class="material-icons">functions</i>
+                    <div class="table__formula-input" contenteditable="true" spellcheck="false"></div>
+                </div>
+
+                <div class="table__main">
+                    <div class="table__main-row">
+                        <div class="table__main-column table__main-column_num"></div>
+                        <div class="table__main-column">A</div>
+                        <div class="table__main-column">B</div>
+                        <div class="table__main-column">C</div>
+                    </div>
+
+                    <div class="table__main-row">
+                        <div class="table__main-column table__main-column_num">1</div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                    </div>
+
+                    <div class="table__main-row">
+                        <div class="table__main-column table__main-column_num">2</div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                        <div class="table__main-column" contenteditable="true" spellcheck="false"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

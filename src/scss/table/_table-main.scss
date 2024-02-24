@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
+.table__main {
+    position: absolute;
+    top: $table-header-height + $table-menu-height + $table-formula-height;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    padding: 4px;
+
+    &-row {
+        display: flex;
+    }
+
+    &-column {
+        padding: 4px 8px;
+        border: 1px solid $background-color-grey;
+        min-width: 140px;
+        outline: none;
+
+        &:focus {
+            border-color: darkcyan;
+        }
+
+        &_num {
+            min-width: 40px;
+            text-align-last: center;
+        }
+    }
+}
