@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../mixins";
+
+.table__formula {
+    position: fixed;
+    top: $table-header-height + $table-menu-height;
+    left: 0;
+    right: 0;
+    height: $table-formula-height;
+    display: flex;
+
+    i {
+        padding: 4px;
+        border-right: 1px solid black;
+    }
+
+    &-input {
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 4px 8px;
+
+        &:focus {
+            border-bottom: 1px solid $background-color-grey;
+        }
+    }
+}

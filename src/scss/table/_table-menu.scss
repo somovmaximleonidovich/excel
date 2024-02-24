@@ -1,0 +1,21 @@
+@import "../variables";
+@import "../mixins";
+
+.table__menu {
+    position: fixed;
+    top: $table-header-height;
+    left: 0;
+    right: 0;
+    height: $table-menu-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $background-color-grey;
+
+    i {
+        &:hover {
+            @include button-hover();
+        }
+    }
+}

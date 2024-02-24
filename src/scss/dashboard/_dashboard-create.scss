@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixins";
+
+.dashboard__create {
+    height: $dashboard-create-height;
+    background-color: $background-color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-button {
+        width: 160px;
+        height: 120px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border: 1px solid green;
+        }
+    }
+}
